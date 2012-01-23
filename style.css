@@ -1,0 +1,178 @@
+body, html {
+	background: #ccc;
+	margin: 0;
+	padding: 0;
+	width: 100%;	
+	font-size: 10px;
+}
+
+#wrapper {
+	width: 984px;
+	margin: 0 auto;
+	padding: 20px 20px 0 20px;
+	background: #fff;
+	font-size:  100%;
+	color: #333;
+}
+
+header {
+	border-bottom: 4px solid #333;
+	margin-bottom: 20px;
+}
+
+header h1 {
+	font-size: 3.8em;
+	margin-bottom: 15px;
+}
+
+header h2 {
+	font-size: 3.2em;
+	color: #555;
+	margin-bottom: 10px;
+}
+
+article {
+	margin-bottom: 26px;
+	font-size: 1.6em;
+}
+
+article section {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+article aside {
+	float: right;
+	width: 28%;
+	border-left: 1px dotted #888;
+	padding-left: 2%;
+}
+
+article h1 {
+	font-size: 1.875em;
+	margin-bottom: 12px;
+}
+
+article h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+article p {
+	margin-bottom: 12px;
+	line-height: 20px;
+	font-size: 1.125em;
+	line-height: 1.375em;
+}
+
+aside span {
+	display: block;
+	margin-bottom: 12px;
+}
+
+aside span strong {
+	margin-right: 8px;
+	font-weight: 800;
+}
+
+footer {
+	background: #333;
+	color: #aaa;
+	padding: 20px;
+	font-size: 1.6em;
+	margin-top: 20px;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+@media only screen and (max-width: 960px) {
+	#wrapper {
+		width: 780px;
+	}
+
+	article section {
+		width: 70%;
+	}
+
+	article aside {
+		width: 23%;
+	}
+
+	article span strong {
+		display: block;
+		margin-bottom: 6px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#wrapper {
+		width: 680px;
+	}
+
+	header h1 {
+		font-size: 3.4em;
+		margin-bottom: 15px;
+	}
+
+	header h2 {
+		font-size: 2.8em;
+		color: #555;
+		margin-bottom: 10px;
+	}
+
+	article h1 {
+		font-size: 1.75em;
+		margin-bottom: 12px;
+	}
+
+	article h2 {
+		font-size: 1.375em;
+		margin-bottom: 10px;
+	}
+
+	article section {
+		width: 100%;
+		float: none;
+	}
+
+	article p {
+		font-size: 1em;
+		line-height: 1.25em;
+	}
+
+	article aside {
+		width: auto;
+		float: none;
+		border-top: 1px dotted #888;
+		border-left: none;
+		border-bottom: 3px solid #555;
+		padding: 10px;
+		background: #ddd;
+	}
+
+	article aside:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	article span {
+		float: left;
+		margin-right: 30px;
+	}
+
+	article span strong {
+		display: inline;
+		margin-right: 2px;
+	}
+}
+
+/* TODO: make styles for iPhone landscape view */
+@media only screen and (max-width: 480px) {
+	
+}
+
+/* TODO: make styles for iPhone portrait view (320px max width) */
